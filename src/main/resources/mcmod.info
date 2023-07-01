@@ -1,0 +1,11 @@
+[{
+  "modid": "exampleaddon",
+  "name": "Example Addon for CEu",
+  "description": "please kill me",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "authorList": ["PutYourselfHere","Amogus"],
+  "credits": "Thanks to all GTCEu devs for maintaining greg on 1.12.2 and GTCE devs for the original project, special thanks to Dan and Tech22 for helping on the making of this example",
+  "logoFile": "",
+  "dependencies": []
+}]
