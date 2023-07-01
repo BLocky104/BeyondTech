@@ -1,9 +1,16 @@
-metaitem.example_susso_meta_item.name=Sussy
-metaitem.battery.re.ulv.potatos.name=PotatoBattery
-metaitem.circuit.potatos.name=PotatOS
 
-metaitem.example_susso_meta_item.tooltip=A example metaitem with a description!
-metaitem.battery.re.ulv.potatos.tooltip=Susy battery
-metaitem.circuit.potatos.tooltip=
-
-material.test_material=Test Material
+material.end_steel=End Steel
+material.electrical_steel=Electrical Steel
+material.dark_steel=Dark Steel
+material.pulsating_iron=Pulsating Iron
+material.conductive_iron=Conductive Iron
+material.redstone_alloy=Redstone Alloy
+material.vibrant_alloy=Vibrant Alloy
+material.energetic_alloy=Energetic Alloy
+material.soularium=Soularium
+material.crystalline_alloy=Crystalline Alloy
+material.melodic_alloy=Melodic Alloy
+material.crystalline_pink_slime=Crystalline Pink Slime
+material.energetic_silver=Energetic Silver
+material.cosmic_neutronium=Cosmic Neutronium
+material.vivid_alloy=Vivid Alloy
