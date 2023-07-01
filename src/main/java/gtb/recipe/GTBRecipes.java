@@ -1,10 +1,10 @@
-package gtb.recipe;
+package bt.recipe;
 
-import gtb.GTBMain;
+import bt.BTMain;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.GTValues;
 import gregtech.api.unification.ore.OrePrefix;
-import gtb.GTBMaterials;
+import bt.BTMaterials;
 
 import static gregtech.api.GTValues.*;
 import static gregtech.api.recipes.RecipeMaps.*;
@@ -12,7 +12,7 @@ import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
 import static gregtech.common.items.MetaItems.*;
 
-public class GTBRecipes {
+public class BTRecipes {
 
     public static void init() {
         miscRecipe();
