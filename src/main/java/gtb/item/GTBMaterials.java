@@ -1,4 +1,4 @@
-package ceuaddon.item;
+package gtb.item;
 
 import gregtech.api.unification.material.Material;
 import gregtech.api.unification.material.properties.*; //recommended to check this if you want to add some properties
@@ -9,9 +9,9 @@ import static gregtech.api.GTValues.*;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 
-public class ExampleMaterials {
+public class GTBMaterials {
 
-    public static final MaterialIconSet EXAMPLE = new MaterialIconSet("exampleiconset");
+    public static final MaterialIconSet EXAMPLE = new MaterialIconSet("exampleiconset"); //do not create a iconset inside the same file which creates materials.
 
     //Registering them
     public static Material testMaterial;

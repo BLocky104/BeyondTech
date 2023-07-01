@@ -1,6 +1,5 @@
-package ceuaddon.metatileentities.multiblock;
+package gtb.metatileentities.multiblock;
 
-import ceuaddon.recipe.ExampleRecipeMaps;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity;
 import gregtech.api.metatileentity.multiblock.IMultiblockPart;
@@ -9,6 +8,7 @@ import gregtech.api.pattern.BlockPattern;
 import gregtech.api.pattern.FactoryBlockPattern;
 import gregtech.client.renderer.ICubeRenderer;
 import gregtech.client.renderer.texture.Textures;
+import gregtech.common.blocks.BlockGlassCasing;
 import gregtech.common.blocks.BlockMetalCasing.MetalCasingType;
 import gregtech.common.blocks.MetaBlocks;
 import net.minecraft.block.state.IBlockState;
@@ -16,25 +16,29 @@ import net.minecraft.util.ResourceLocation;
 
 import javax.annotation.Nonnull;
 
-public class MetaTileEntityTestElectric extends RecipeMapMultiblockController {
-    public MetaTileEntityTestElectric(ResourceLocation metaTileEntityId) {
-        super(metaTileEntityId, ExampleRecipeMaps.TEST_RECIPES);
+public class MetaTileEntityBiovat extends RecipeMapMultiblockController {
+    public MetaTileEntityBiovat(ResourceLocation metaTileEntityId) {
+        super(metaTileEntityId, ceuaddon.recipe.ExampleRecipeMaps.TEST_RECIPES);
     }
 
     @Override
     public MetaTileEntity createMetaTileEntity(IGregTechTileEntity tileEntity) {
-        return new MetaTileEntityTestElectric(metaTileEntityId);
+        return new MetaTileEntityBiovat(metaTileEntityId);
     }
 
     @Override
     protected BlockPattern createStructurePattern() {
         return FactoryBlockPattern.start()
-                .aisle("#XXX#", "#XXX#", "#XXX#", "#XXX#", "#XXX#")
-                .aisle("XXXXX", "XX#XX", "XX#XX", "XX#XX", "XXXXX")
-                .aisle("#XXX#", "#XSX#", "#XXX#", "#XXX#", "#XXX#")
-                .where('S', selfPredicate())
-                .where('X', states(getCasingState()).setMinGlobalLimited(27).or(autoAbilities()))
-                .where('#', air())
+                .aisle("CCECC", "GGGGG", "GGGGG", "CCCCC")
+                .aisle("CCCCC", "G###G", "G###G", "CCCCC")
+                .aisle("CCCCC", "G###G", "G###G", "CCCCC")
+                .aisle("CCCCC", "G###G", "G###G", "CCCCC")
+                .aisle("CCCCC", "GGGGG", "GGGGG", "CCCCC")
+                .where('E', selfPredicate())
+                .where('C', states(getCasingState()).setMinGlobalLimited(25).or(autoAbilities()))
+                .where('G',states(MetaBlocks.TRANSPARENT_CASING.getState(BlockGlassCasing.CasingType.LAMINATED_GLASS)))
+
+                        .where('#', air())
                 .build();
     }
 
@@ -50,6 +54,7 @@ public class MetaTileEntityTestElectric extends RecipeMapMultiblockController {
     @Nonnull
     @Override
     protected ICubeRenderer getFrontOverlay() {
-        return Textures.FUSION_REACTOR_OVERLAY;
+        return Textures.CHEMICAL_BATH_OVERLAY;
     }
 }
+

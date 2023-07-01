@@ -1,6 +1,6 @@
-package ceuaddon.metatileentities.singleblock;
+package beyondtech.metatileentities.singleblock;
 
-import ceuaddon.recipe.ExampleRecipeMaps;
+import beyondtech.recipe.ExampleRecipeMaps;
 import gregtech.api.capability.impl.NotifiableItemStackHandler;
 import gregtech.api.gui.GuiTextures;
 import gregtech.api.gui.ModularUI;
