@@ -1,4 +1,4 @@
-package gtb.metatileentities.multiblock;
+package bt.metatileentities.multiblock;
 
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity;

@@ -1,15 +1,15 @@
-package gtb.metatileentities;
+package bt.metatileentities;
 
-
+import bt.BTMain;
 import gregtech.api.GTValues;
 import gregtech.api.metatileentity.SimpleMachineMetaTileEntity;
-import gtb.metatileentities.multiblock.MetaTileEntityBiovat;
-import gtb.metatileentities.multiblock.MetaTileEntityVisBreaker;
+import bt.metatileentities.multiblock.MetaTileEntityBiovat;
+import bt.metatileentities.multiblock.MetaTileEntityVisBreaker;
 import net.minecraft.util.ResourceLocation;
 
 import static gregtech.common.metatileentities.MetaTileEntities.registerMetaTileEntity;
 
-public class ExampleMetaTileEntities {
+public class BTMetaTileEntities {
 
     // Multiblock
     public static MetaTileEntityBiovat BIO_VAT;
@@ -21,16 +21,16 @@ public class ExampleMetaTileEntities {
 
     public static void init() {
         //Multiblock
-        BIO_VAT = registerMetaTileEntity(19999, new MetaTileEntityBiovat(exampleId("biovat")));
-        VIS_BREAKER = registerMetaTileEntity(19996, new MetaTileEntityVisBreaker(exampleId("visbreaker")));
+        BIO_VAT = registerMetaTileEntity(19999, new MetaTileEntityBiovat(beyondtechId("biovat")));
+        VIS_BREAKER = registerMetaTileEntity(19996, new MetaTileEntityVisBreaker(beyondtechId("visbreaker")));
 
         //Singleblock
 
         //19976-19990
     }
 
-    private static ResourceLocation exampleId(String name) {
-        return new ResourceLocation(Gregtech.ID, name);
+    private static ResourceLocation beyondtechId(String name) {
+        return new ResourceLocation(BTMain.ID, name);
     }
 
 }

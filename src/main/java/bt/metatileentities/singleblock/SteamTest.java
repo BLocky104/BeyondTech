@@ -1,6 +1,6 @@
-package beyondtech.metatileentities.singleblock;
+package bt.metatileentities.singleblock;
 
-import beyondtech.recipe.ExampleRecipeMaps;
+import static bt.recipe.BTRecipeMaps;
 import gregtech.api.capability.impl.NotifiableItemStackHandler;
 import gregtech.api.gui.GuiTextures;
 import gregtech.api.gui.ModularUI;
@@ -19,7 +19,7 @@ import net.minecraftforge.items.IItemHandlerModifiable;
 public class SteamTest extends SteamMetaTileEntity {
 
     public SteamTest(ResourceLocation metaTileEntityId, boolean isHighPressure) {
-        super(metaTileEntityId, ExampleRecipeMaps.TEST_RECIPES, Textures.FURNACE_OVERLAY, isHighPressure);
+        super(metaTileEntityId, TEST_RECIPES, Textures.FURNACE_OVERLAY, isHighPressure);
     }
 
     @Override
