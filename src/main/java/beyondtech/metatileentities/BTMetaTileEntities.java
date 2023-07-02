@@ -1,10 +1,8 @@
 package beyondtech.metatileentities;
 
 import beyondtech.BTMain;
-import gregtech.api.GTValues;
-import gregtech.api.metatileentity.SimpleMachineMetaTileEntity;
-import beyondtech.metatileentities.multiblock.MetaTileEntityBiovat;
-import beyondtech.metatileentities.multiblock.MetaTileEntityVisBreaker;
+import beyondtech.metatileentities.multiblock.electric.MetaTileEntityBiovat;
+import beyondtech.metatileentities.multiblock.electric.MetaTileEntityVisBreaker;
 import net.minecraft.util.ResourceLocation;
 
 import static gregtech.common.metatileentities.MetaTileEntities.registerMetaTileEntity;
