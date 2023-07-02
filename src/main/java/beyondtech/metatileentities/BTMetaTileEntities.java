@@ -17,19 +17,19 @@ public class BTMetaTileEntities {
 
     // Singleblock
 
-    public static final SimpleMachineMetaTileEntity[] TEST_MACHINE = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
+   // public static final SimpleMachineMetaTileEntity[] TEST_MACHINE = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
 
     public static void init() {
         //Multiblock
-        BIO_VAT = registerMetaTileEntity(19998, new MetaTileEntityBiovat(beyondtechId("biovat")));
-        VIS_BREAKER = registerMetaTileEntity(19997, new MetaTileEntityVisBreaker(beyondtechId("visbreaker")));
+        BIO_VAT = registerMetaTileEntity(19998, new MetaTileEntityBiovat(beyondtechid("biovat")));
+        VIS_BREAKER = registerMetaTileEntity(19997, new MetaTileEntityVisBreaker(beyondtechid("visbreaker")));
 
         //Singleblock
 
         //19976-19990
     }
 
-    private static ResourceLocation beyondtechId(String name) {
+    private static ResourceLocation beyondtechid(String name) {
         return new ResourceLocation(BTMain.ID, name);
     }
 
